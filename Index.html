@@ -4,14 +4,17 @@
     <title>My Page</title> 
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="MainStyle.css" />
     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
   </head> 
   <body> 
  
     <div data-role="page" id="home">
-      <div data-role="header">
-        <h1>Hello World</h1>
+      <div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+		<h1>Hello World</h1>
+		<a href="#menupop" data-role="button" data-icon="bars" data-transition="flip" data-rel="dialog"> Menu </a>
       </div><!-- /header -->
  
       <div data-role="content">
@@ -32,26 +35,17 @@
 		</ul>
       </div><!-- /content -->
  
-      <div data-role="footer">
-        <h4>My Footer</h4>
+      <div data-role="footer" data-position="fixed">
+        <h4>Nav Bar</h4>
       </div><!-- /header -->
  
     </div><!-- /page -->
 	
 	<div data-role="page"  id="connor">
       
-	  <div data-role="header">
-		<table align="center">
-		<tr>
-			<td>
-				<h1>Connor</h1>
-			</td>
-			
-			<td>
-				<a href = "#home" data-transition = "fade" data-role="button"> Home </a>
-			</td>
-		</tr>
-	</table>
+	  <div data-role="header" data-position="fixed">
+		<a href="#home" data-role="button" data-icon="home">Home</a>
+		<h1>Connor</h1>
       </div><!-- /header -->
  
       <div data-role="content">
@@ -60,13 +54,39 @@
 			<p> Banannas! </p>
 		</div>
 		
-		<div data-role="footer">
+		<div data-role="collapsible">
+			<h1> Images n' Stuff </h1>
+			<img src="images/image1.jpg">
+			<img src="images/image2.jpg">
+			<img src="images/image3.jpg">
+			<img src="images/image4.jpg">
+		</div>
+		
+	</div>	
+		<div data-role="footer" data-position="fixed">
         <h4>Connor is Awesome</h4>
       </div><!-- /header -->
  
     </div><!-- /page -->
 	
-	
+	<div data-role="page"  id="menupop">
+      
+	  <div data-role="header" data-position="fixed">
+		<a href="#home" data-role="button" data-icon="home">Home</a>
+		<h1>Menu</h1>
+      </div><!-- /header -->
+ 
+      <div data-role="content">
+        <ul data-role="listview">
+			<li><a href="#connor" data-transition="flip">Connor</a></li>
+			<li><a href="#">Noah</a></li>
+			<li><a href="#">Dai</a></li>
+			<li><a href="#">Aly</a></li>
+			<li><a href="#">Peter</a></li>
+			<li><a href="#">Ankun</a></li>
+		</ul>
+	  </div><!-- /page -->
+
  
   </body>
 </html>
