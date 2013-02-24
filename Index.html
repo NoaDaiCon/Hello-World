@@ -9,13 +9,27 @@
   </head> 
   <body> 
  
-    <div data-role="page">
+    <div data-role="page" id="home">
       <div data-role="header">
-        <h1>My Title</h1>
+        <h1>Hello World</h1>
       </div><!-- /header -->
  
       <div data-role="content">
-        <p>Hello world</p>
+        <div data-role="collapsible">
+			<h1> What is the capital of Canada?</h1>
+			<p> Ottawa! </p>
+		</div>
+
+		<br> 
+		
+		<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-inset="true">
+			<li><a href="#connor" data-transition="flip">Connor</a></li>
+			<li><a href="#">Noah</a></li>
+			<li><a href="#">Dai</a></li>
+			<li><a href="#">Aly</a></li>
+			<li><a href="#">Peter</a></li>
+			<li><a href="#">Ankun</a></li>
+		</ul>
       </div><!-- /content -->
  
       <div data-role="footer">
@@ -23,6 +37,36 @@
       </div><!-- /header -->
  
     </div><!-- /page -->
+	
+	<div data-role="page"  id="connor">
+      
+	  <div data-role="header">
+		<table align="center">
+		<tr>
+			<td>
+				<h1>Connor</h1>
+			</td>
+			
+			<td>
+				<a href = "#home" data-transition = "fade" data-role="button"> Home </a>
+			</td>
+		</tr>
+	</table>
+      </div><!-- /header -->
+ 
+      <div data-role="content">
+        <div data-role="collapsible">
+			<h1> What is Connor's Favorite Fruit? </h1>
+			<p> Banannas! </p>
+		</div>
+		
+		<div data-role="footer">
+        <h4>Connor is Awesome</h4>
+      </div><!-- /header -->
+ 
+    </div><!-- /page -->
+	
+	
  
   </body>
 </html>
