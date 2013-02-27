@@ -1,20 +1,22 @@
 <!DOCTYPE html> 
 <html> 
   <head> 
-    <title>My Page</title> 
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
-	<link rel="stylesheet" href="MainStyle.css" />
-    <script src="jquery-1.9.1.js"></script>
-    <script src="jquery.mobile-1.3.0.js"></script>
-  </head> 
+	<title>Hello World</title> 
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
+</head> 
   <body> 
  
     <div data-role="page" id="home">
+	
       <div data-role="header" data-position="fixed">
         <a href="#home" data-role="button" data-icon="home">Home</a>
 		<h1>Hello World</h1>
-		<a href="#menupop" data-role="button" data-icon="bars" data-transition="flip" data-rel="dialog"> Menu </a>
+		<a href="#menupanel" data-role="button" data-icon="bars" data-transition="flip" data-rel="dialog"> Menu </a>
       </div><!-- /header -->
  
       <div data-role="content">
@@ -22,22 +24,25 @@
 			<h1> What is the capital of Canada?</h1>
 			<p> Ottawa! </p>
 		</div>
-
-		<br> 
-		
-		<ul data-role="listview" data-filter="true" data-inset="true">
-			<li><a href="#connor" data-transition="flip">Connor</a></li>
-			<li><a href="#">Noah</a></li>
-			<li><a href="#">Dai</a></li>
-			<li><a href="#">Aly</a></li>
-			<li><a href="#">Peter</a></li>
-			<li><a href="#">Ankun</a></li>
-		</ul>
       </div><!-- /content -->
  
       <div data-role="footer" data-position="fixed">
         <h4>Nav Bar</h4>
-      </div><!-- /header -->
+      </div><!-- /footer -->
+	  
+	  <div data-role="panel" id="menupanel" data-position="right">
+		<div class="panel-content">
+			<ul data-role="listview" data-filter="true" data-inset="true">
+			<li><a href="#connor" data-transition="flip">Connor</a></li>
+			<li><a href="#">Noah</a></li>
+			<li><a href="#">Eric</a></li>
+			<li><a href="#">Aly</a></li>
+			<li><a href="#">Peter</a></li>
+			<li><a href="#">Ankun</a></li>
+		</ul>
+		</div>
+	  
+	  </div>
  
     </div><!-- /page -->
 	
@@ -46,7 +51,7 @@
 	  <div data-role="header" data-position="fixed">
 		<a href="#home" data-role="button" data-icon="home">Home</a>
 		<h1>Connor</h1>
-		<a href="www/original.html" rel="external" data-role="button" data-icon="bars">Orig</a>
+		<a href="#menupanel" data-role="button" data-icon="bars">Menu</a>
       </div><!-- /header -->
  
       <div data-role="content">
@@ -67,6 +72,20 @@
 		<div data-role="footer" data-position="fixed">
         <h4>Connor is Awesome</h4>
       </div><!-- /header -->
+	  
+	 <div data-role="panel" id="menupanel" data-position="right">
+		<div class="panel-content">
+			<ul data-role="listview" data-filter="true" data-inset="true">
+			<li><a href="#connor" data-transition="flip">Connor</a></li>
+			<li><a href="#">Noah</a></li>
+			<li><a href="#">Eric</a></li>
+			<li><a href="#">Aly</a></li>
+			<li><a href="#">Peter</a></li>
+			<li><a href="#">Ankun</a></li>
+		</ul>
+		</div>
+	  
+	  </div>
  
     </div><!-- /page -->
 	
@@ -87,7 +106,7 @@
 			<li><a href="#">Ankun</a></li>
 		</ul>
 	  </div><!-- /page -->
-
+	</div>
  
   </body>
 </html>
